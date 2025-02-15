@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff; /* White background for the body */
+    margin: 0; /* Remove default margin */
+}
+
+.hero {
+    background: url('smccnasipit_cover.jpg') no-repeat center center/cover; /* Set the background image */
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+    border: 5px solid #ffeb3b; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+    position: relative; /* Position relative for overlay */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    border-radius: 10px; /* Match the border radius */
+    z-index: 1; /* Place overlay above the background */
+}
+
+.hero .container {
+    position: relative; /* Position relative for text */
+    z-index: 2; /* Place text above the overlay */
+    color: white; /* White text color */
+}
+
+.navbar-custom {
+    background-color: #0056b3; /* Darker blue color */
+}
+
+.navbar-brand img {
+    height: 40px; /* Set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the logo and text */
+    vertical-align: middle; /* Align the image vertically with the text */
+}
+
+footer {
+    background-color: #ffffff; /* White background for the footer */
+    color: #000; /* Black text color for contrast */
+}
+
